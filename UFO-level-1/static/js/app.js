@@ -20,10 +20,12 @@ UFOData.forEach((city) => {
 
 // FILTER THE INFORMATION
 
+// Select the button
 var button = d3.select("#filter-btn");
 var form = d3.select("form");
 
 form.on("submit", runFilter);
+// Create event handler
 button.on("click",runFilter);
 
 function runFilter() {
