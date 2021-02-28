@@ -25,3 +25,12 @@ var form = d3.select("form");
 
 form.on("submit", runFilter);
 button.on("click",runFilter);
+
+function runFilter() {
+
+
+
+
+
+    
+}
