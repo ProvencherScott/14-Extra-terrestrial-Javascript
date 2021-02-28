@@ -20,5 +20,6 @@ UFOData.forEach((city) => {
 
 // FILTER THE INFORMATION
 
+
 // Select the button
 
