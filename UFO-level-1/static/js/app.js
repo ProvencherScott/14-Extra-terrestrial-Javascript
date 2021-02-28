@@ -28,9 +28,13 @@ button.on("click",runFilter);
 
 function runFilter() {
 
+    // Remove existing table
+    d3.select("tbody").html("");
+    // prevent default
+    d3.event.preventDefault();
 
 
 
 
-    
+
 }
