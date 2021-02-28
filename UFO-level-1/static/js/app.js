@@ -33,8 +33,17 @@ function runFilter() {
     // prevent default
     d3.event.preventDefault();
 
+    var inputValue = d3.select("#datetime").property("value");
+    console.log(inputValue);
 
+    var filteredData = UFOData.filter( info => info.datetime === inputValue);
+    console.log(filteredData);
 
-
-
+    filteredData.forEach((city) => {
+        var row = tbody.append("tr");
+        Object.entries(city).forEach(([key,value]) => {
+            var cell = row.append("td");
+            cell.text(value);
+        });
+    });
 }
